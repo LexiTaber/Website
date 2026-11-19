@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Case study — lexitaber.com</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#F6F6F9}
+a{color:#4A2FE0}a:hover{color:#2E1BA8}
+.navlink{padding:10px 16px;border-radius:999px;text-decoration:none;color:#15131F}
+.navlink:hover{background:#ECE8FF;color:#15131F}
+.lift{transition:transform .18s ease,box-shadow .18s ease}
+.lift:hover{transform:translateY(-4px);box-shadow:0 14px 36px rgba(21,19,31,.10)}
+.dots{background-color:#FFFFFF;background-image:radial-gradient(#D9D7E3 1.2px,transparent 1.2px);background-size:18px 18px}
+@media (prefers-reduced-motion: reduce){.lift{transition:none}}
+</style>
+</helmet>
+<div style="font-family: Inter, system-ui, sans-serif; color: #15131F; background: #F6F6F9">
+
+<header style="max-width: 1120px; margin: 0 auto; padding: 24px 32px; display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 16px">
+<a href="Main.dc.html" style="justify-self: start; font-family: 'JetBrains Mono', monospace; font-size: 15px; font-weight: 500; color: #15131F; text-decoration: none">lexi<span style="color: #5B3DF5">.</span>taber</a>
+<nav aria-label="Main" style="display: flex; gap: 4px; background: #FFFFFF; border: 1px solid #E2E1EA; border-radius: 999px; padding: 4px">
+<a class="navlink" href="Main.dc.html" style="font-size: 15px; font-weight: 500">Home</a>
+<a class="navlink" href="Work.dc.html" aria-current="page" style="font-size: 15px; font-weight: 500; background: #15131F; color: #FFFFFF">Work</a>
+<a class="navlink" href="About.dc.html" style="font-size: 15px; font-weight: 500">About</a>
+<a class="navlink" href="About.dc.html#contact" style="font-size: 15px; font-weight: 500">Contact</a>
+</nav>
+<a href="#" style="justify-self: end; display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 18px; border-radius: 999px; border: 1px solid #15131F; color: #15131F; text-decoration: none; font-size: 14px; font-weight: 500"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11"></path><path d="m7 10 5 5 5-5"></path><path d="M5 20h14"></path></svg>Resume</a>
+</header>
+
+<section style="max-width: 1120px; margin: 0 auto; padding: 48px 32px 40px; box-sizing: border-box">
+<p style="margin: 0 0 24px; font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #55536A"><a href="Work.dc.html" style="color: #55536A">Work</a> / <a href="Work.dc.html" style="color: #55536A">Systems Architecture</a></p>
+<div style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px">
+<span style="display: inline-flex; align-items: center; gap: 6px; padding: 6px 12px; border-radius: 999px; background: #ECE8FF; color: #3B22C7; font-family: 'JetBrains Mono', monospace; font-size: 12px"><span style="width: 6px; height: 6px; border-radius: 50%; background: #5B3DF5; display: inline-block"></span>Systems Architecture</span>
+<span style="display: inline-flex; align-items: center; gap: 6px; padding: 6px 12px; border-radius: 999px; background: #FFF3C7; color: #7A5300; font-family: 'JetBrains Mono', monospace; font-size: 12px"><span style="width: 6px; height: 6px; border-radius: 50%; background: #F2B705; display: inline-block"></span>Automation</span>
+</div>
+<h1 style="margin: 0 0 20px; max-width: 900px; font-family: 'Space Grotesk', sans-serif; font-size: 56px; line-height: 1.05; letter-spacing: -0.03em">Rebuilding an eligibility and lending pipeline</h1>
+<p style="margin: 0 0 40px; max-width: 760px; font-size: 20px; line-height: 1.6; color: #3D3B4F">Replaced a spreadsheet-driven review with a structured data model and automated decision support, so a small team could screen more deals with fewer errors.</p>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1px; background: #E2E1EA; border: 1px solid #E2E1EA; border-radius: 20px; overflow: hidden">
+<div style="background: #FFFFFF; padding: 20px 24px"><p style="margin: 0 0 6px; font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.08em; color: #55536A">ROLE</p><p style="margin: 0; font-size: 16px; font-weight: 500">Architect + lead developer</p></div>
+<div style="background: #FFFFFF; padding: 20px 24px"><p style="margin: 0 0 6px; font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.08em; color: #55536A">TEAM</p><p style="margin: 0; font-size: 16px; font-weight: 500">[TEAM SIZE]</p></div>
+<div style="background: #FFFFFF; padding: 20px 24px"><p style="margin: 0 0 6px; font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.08em; color: #55536A">TIMELINE</p><p style="margin: 0; font-size: 16px; font-weight: 500">[DURATION]</p></div>
+<div style="background: #FFFFFF; padding: 20px 24px"><p style="margin: 0 0 6px; font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.08em; color: #55536A">STACK</p><p style="margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 14px">Apex · Flow · LWC · SOQL</p></div>
+</div>
+</section>
+
+<section style="max-width: 1120px; margin: 0 auto; padding: 0 32px 72px; box-sizing: border-box">
+<div class="dots" role="img" aria-label="Placeholder for a sanitized architecture diagram" style="height: 340px; border: 1px solid #E2E1EA; border-radius: 24px; display: flex; align-items: center; justify-content: center">
+<span style="padding: 12px 20px; border-radius: 999px; background: #FFFFFF; border: 1px solid #E2E1EA; font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #55536A">[Architecture diagram, sanitized: objects, flows, no client data]</span>
+</div>
+</section>
+
+<article style="max-width: 1120px; margin: 0 auto; padding: 0 32px 40px; box-sizing: border-box; display: flex; flex-direction: column; gap: 64px">
+
+<div style="display: flex; flex-wrap: wrap; gap: 24px 48px">
+<p style="flex: 0 1 220px; margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.08em; color: #3B22C7">01 · THE PROBLEM</p>
+<div style="flex: 999 1 520px; min-width: 0; max-width: 720px">
+<h2 style="margin: 0 0 14px; font-family: 'Space Grotesk', sans-serif; font-size: 30px; letter-spacing: -0.02em">Rules lived in spreadsheets and inboxes</h2>
+<p style="margin: 0; font-size: 17px; line-height: 1.7; color: #3D3B4F">Every eligibility review meant re-keying data into a template and checking it by hand. The rules changed faster than anyone could update the templates, so two reviewers could reach two different answers on the same deal.</p>
+</div>
+</div>
+
+<div style="display: flex; flex-wrap: wrap; gap: 24px 48px">
+<p style="flex: 0 1 220px; margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.08em; color: #3B22C7">02 · CONSTRAINTS</p>
+<div style="flex: 999 1 520px; min-width: 0; max-width: 720px">
+<h2 style="margin: 0 0 14px; font-family: 'Space Grotesk', sans-serif; font-size: 30px; letter-spacing: -0.02em">Small team, changing rules, audit trail required</h2>
+<ul style="margin: 0; padding-left: 20px; font-size: 17px; line-height: 1.7; color: #3D3B4F">
+<li>No budget for a managed package</li>
+<li>Program staff, not developers, own the rules and need to change them</li>
+<li>Every decision has to be explainable after the fact</li>
+</ul>
+</div>
+</div>
+
+<div style="display: flex; flex-wrap: wrap; gap: 24px 48px">
+<p style="flex: 0 1 220px; margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.08em; color: #3B22C7">03 · DECISIONS I OWNED</p>
+<div style="flex: 999 1 520px; min-width: 0; max-width: 720px; display: flex; flex-direction: column; gap: 14px">
+<div style="background: #FFFFFF; border: 1px solid #E2E1EA; border-radius: 18px; padding: 20px 24px"><p style="margin: 0 0 6px; font-weight: 600; font-size: 17px">Rules as records, not code</p><p style="margin: 0; font-size: 16px; line-height: 1.65; color: #3D3B4F">Modeled each eligibility criterion as data so program staff can update thresholds without a deployment.</p></div>
+<div style="background: #FFFFFF; border: 1px solid #E2E1EA; border-radius: 18px; padding: 20px 24px"><p style="margin: 0 0 6px; font-weight: 600; font-size: 17px">Flow where staff maintain it, Apex where it has to scale</p><p style="margin: 0; font-size: 16px; line-height: 1.65; color: #3D3B4F">Kept staff-owned steps in Flow and moved bulk calculations and validation into tested Apex.</p></div>
+<div style="background: #FFFFFF; border: 1px solid #E2E1EA; border-radius: 18px; padding: 20px 24px"><p style="margin: 0 0 6px; font-weight: 600; font-size: 17px">A review screen that shows its work</p><p style="margin: 0; font-size: 16px; line-height: 1.65; color: #3D3B4F">Built an LWC that shows each criterion's result and the data behind it, so reviewers can trust the answer.</p></div>
+<div style="background: #FFFFFF; border: 1px solid #E2E1EA; border-radius: 18px; padding: 20px 24px"><p style="margin: 0 0 6px; font-weight: 600; font-size: 17px">Build it and coach it</p><p style="margin: 0; font-size: 16px; line-height: 1.65; color: #3D3B4F">Wrote the Apex myself while pairing with a teammate on the Flow layer, so the team can own it after launch.</p></div>
+</div>
+</div>
+
+<div style="display: flex; flex-wrap: wrap; gap: 24px 48px">
+<p style="flex: 0 1 220px; margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.08em; color: #3B22C7">04 · OUTCOME</p>
+<div style="flex: 999 1 520px; min-width: 0; max-width: 720px">
+<div style="background: #ECE8FF; border-radius: 22px; padding: 28px; display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 24px">
+<div><p style="margin: 0 0 4px; font-family: 'Space Grotesk', sans-serif; font-size: 34px; font-weight: 700; color: #3B22C7">[METRIC]</p><p style="margin: 0; font-size: 15px; color: #3D3B4F">[e.g. review time per deal]</p></div>
+<div><p style="margin: 0 0 4px; font-family: 'Space Grotesk', sans-serif; font-size: 34px; font-weight: 700; color: #3B22C7">[METRIC]</p><p style="margin: 0; font-size: 15px; color: #3D3B4F">[e.g. errors caught before approval]</p></div>
+<div><p style="margin: 0 0 4px; font-family: 'Space Grotesk', sans-serif; font-size: 34px; font-weight: 700; color: #3B22C7">0</p><p style="margin: 0; font-size: 15px; color: #3D3B4F">deployments needed to change a rule</p></div>
+</div>
+</div>
+</div>
+
+<div style="display: flex; flex-wrap: wrap; gap: 24px 48px">
+<p style="flex: 0 1 220px; margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.08em; color: #3B22C7">05 · REFLECTION</p>
+<div style="flex: 999 1 520px; min-width: 0; max-width: 720px">
+<p style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 26px; line-height: 1.4; letter-spacing: -0.01em; font-weight: 500">Most of the work happened before any code: getting program and finance staff to agree on one definition of eligible. Once that existed, the build was straightforward.</p>
+</div>
+</div>
+
+</article>
+
+<section style="max-width: 1120px; margin: 0 auto; padding: 56px 32px 96px; box-sizing: border-box">
+<h2 style="margin: 0 0 24px; font-family: 'Space Grotesk', sans-serif; font-size: 28px; letter-spacing: -0.02em">More in Systems Architecture</h2>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px">
+<a class="lift" href="Work.dc.html" style="display: flex; flex-direction: column; gap: 12px; padding: 28px; border-radius: 22px; background: #FFFFFF; border: 1px solid #E2E1EA; color: #15131F; text-decoration: none">
+<span style="align-self: flex-start; display: inline-flex; align-items: center; gap: 6px; padding: 6px 12px; border-radius: 999px; background: #DDF4F2; color: #0B5F5B; font-family: 'JetBrains Mono', monospace; font-size: 12px"><span style="width: 6px; height: 6px; border-radius: 50%; background: #0E9F9A; display: inline-block"></span>Integrations</span>
+<span style="font-family: 'Space Grotesk', sans-serif; font-size: 22px; font-weight: 600">Connecting CRM, finance, and reporting data</span>
+<span style="font-size: 15px; font-weight: 600; color: #3B22C7">Read case study →</span>
+</a>
+<a class="lift" href="Work.dc.html" style="display: flex; flex-direction: column; gap: 12px; padding: 28px; border-radius: 22px; background: #15131F; color: #FFFFFF; text-decoration: none">
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.08em; color: #B9AEFF">NEXT PROJECT</span>
+<span style="font-family: 'Space Grotesk', sans-serif; font-size: 22px; font-weight: 600">Rolling out AI tools with governance built in</span>
+<span style="font-size: 15px; font-weight: 600; color: #FFFFFF">Next →</span>
+</a>
+</div>
+</section>
+
+<footer style="border-top: 1px solid #E2E1EA">
+<div style="max-width: 1120px; margin: 0 auto; padding: 32px; box-sizing: border-box; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 16px">
+<p style="margin: 0; font-size: 15px; color: #3D3B4F">Open to conversations about architecture and AI strategy work.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 8px">
+<a href="#" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 12px; font-size: 15px; font-weight: 500">Email</a>
+<a href="#" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 12px; font-size: 15px; font-weight: 500">LinkedIn</a>
+<a href="#" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 12px; font-size: 15px; font-weight: 500">GitHub</a>
+</div>
+</div>
+<p style="max-width: 1120px; margin: 0 auto; padding: 0 32px 32px; box-sizing: border-box; font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #55536A">© 2026 Lexi Taber · Built from scratch, code on GitHub</p>
+</footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1280,"height":2480}}'>
+class Component extends DCLogic {
+renderVals() {
+return {};
+}
+}
+</script>
+</body>
+</html>

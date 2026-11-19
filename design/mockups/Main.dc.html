@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Home — lexitaber.com</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#F6F6F9}
+a{color:#4A2FE0}a:hover{color:#2E1BA8}
+.navlink{padding:10px 16px;border-radius:999px;text-decoration:none;color:#15131F}
+.navlink:hover{background:#ECE8FF;color:#15131F}
+.lift{transition:transform .18s ease,box-shadow .18s ease}
+.lift:hover{transform:translateY(-4px);box-shadow:0 14px 36px rgba(21,19,31,.10)}
+.prog{width:0;animation:prog 3.6s linear forwards}
+@keyframes prog{from{width:0}to{width:100%}}
+@media (prefers-reduced-motion: reduce){.prog{animation:none;width:100%}.lift{transition:none}}
+</style>
+</helmet>
+<div style="font-family: Inter, system-ui, sans-serif; color: #15131F; background: #F6F6F9">
+
+<header style="max-width: 1120px; margin: 0 auto; padding: 24px 32px; display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 16px">
+<a href="Main.dc.html" style="justify-self: start; font-family: 'JetBrains Mono', monospace; font-size: 15px; font-weight: 500; color: #15131F; text-decoration: none">lexi<span style="color: #5B3DF5">.</span>taber</a>
+<nav aria-label="Main" style="display: flex; gap: 4px; background: #FFFFFF; border: 1px solid #E2E1EA; border-radius: 999px; padding: 4px">
+<a class="navlink" href="Main.dc.html" aria-current="page" style="font-size: 15px; font-weight: 500; background: #15131F; color: #FFFFFF">Home</a>
+<a class="navlink" href="Work.dc.html" style="font-size: 15px; font-weight: 500">Work</a>
+<a class="navlink" href="About.dc.html" style="font-size: 15px; font-weight: 500">About</a>
+<a class="navlink" href="About.dc.html#contact" style="font-size: 15px; font-weight: 500">Contact</a>
+</nav>
+<a href="#" style="justify-self: end; display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 18px; border-radius: 999px; border: 1px solid #15131F; color: #15131F; text-decoration: none; font-size: 14px; font-weight: 500"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11"></path><path d="m7 10 5 5 5-5"></path><path d="M5 20h14"></path></svg>Resume</a>
+</header>
+
+<section style="max-width: 1120px; margin: 0 auto; padding: 64px 32px 96px; box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 56px; align-items: center">
+<div style="flex: 1 1 480px; min-width: 0">
+<p style="margin: 0 0 20px; display: flex; align-items: center; gap: 10px; font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.08em; color: #55536A"><span style="width: 8px; height: 8px; border-radius: 50%; background: #0E9F9A; display: inline-block"></span>SYSTEMS ARCHITECTURE · AI STRATEGY · NYC</p>
+<h1 style="margin: 0 0 24px; font-family: 'Space Grotesk', sans-serif; font-size: 64px; line-height: 1.02; letter-spacing: -0.03em; font-weight: 700">I set the strategy <span style="color: {{accent}}">and ship the build.</span></h1>
+<p style="margin: 0 0 32px; max-width: 560px; font-size: 19px; line-height: 1.6; color: #3D3B4F">I lead lean systems teams as a player-coach: designing the architecture, making the calls on AI and tooling, and writing the Apex myself. Salesforce is home base. Integrations and automation are how the pieces fit together.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 12px">
+<a href="Work.dc.html" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 24px; border-radius: 999px; background: #15131F; color: #FFFFFF; text-decoration: none; font-weight: 600; font-size: 15px">See the work</a>
+<a href="About.dc.html" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 24px; border-radius: 999px; background: #FFFFFF; border: 1px solid #E2E1EA; color: #15131F; text-decoration: none; font-weight: 600; font-size: 15px">About me</a>
+</div>
+</div>
+<div style="flex: 1 1 420px; min-width: 0">
+<div style="background: #FFFFFF; border: 1px solid #E2E1EA; border-radius: 28px; padding: 28px; box-sizing: border-box; display: flex; flex-direction: column; gap: 22px">
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 12px">
+<p style="margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.08em; color: #55536A">HOW THE PIECES FIT</p>
+<button type="button" onClick="{{toggle}}" style="display: inline-flex; align-items: center; gap: 6px; min-height: 44px; padding: 0 14px; border-radius: 999px; border: 1px solid #E2E1EA; background: #FFFFFF; color: #15131F; font-family: 'JetBrains Mono', monospace; font-size: 12px; cursor: pointer">
+<sc-if value="{{paused}}" hint-placeholder-val="{{ false }}"><svg aria-hidden="true" width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M7 4v16l13-8z"></path></svg>Play</sc-if>
+<sc-if value="{{playing}}" hint-placeholder-val="{{ true }}"><svg aria-hidden="true" width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect></svg>Pause</sc-if>
+</button>
+</div>
+<div role="group" aria-label="Steps" style="display: flex; align-items: center">
+<sc-for list="{{steps}}" as="s" hint-placeholder-count="4">
+<button type="button" onClick="{{s.pick}}" aria-pressed="{{s.pressed}}" style="flex: none; min-height: 44px; padding: 0 14px; border-radius: 999px; border: 1px solid {{s.border}}; background: {{s.bg}}; color: {{s.fg}}; font-family: Inter, sans-serif; font-size: 14px; font-weight: 600; cursor: pointer; transition: background .25s ease, color .25s ease">{{s.label}}</button>
+<sc-if value="{{s.hasNext}}" hint-placeholder-val="{{ true }}"><span aria-hidden="true" style="flex: 1 1 12px; min-width: 10px; height: 2px; background: {{s.line}}; transition: background .25s ease"></span></sc-if>
+</sc-for>
+</div>
+<sc-for list="{{steps}}" as="s" hint-placeholder-count="1">
+<sc-if value="{{s.active}}" hint-placeholder-val="{{ true }}">
+<div style="background: #F6F6F9; border-radius: 20px; padding: 24px; box-sizing: border-box; min-height: 236px; display: flex; flex-direction: column; gap: 12px">
+<p style="margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.08em; color: {{s.modeInk}}">{{s.num}} · {{s.mode}}</p>
+<p style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 26px; line-height: 1.15; font-weight: 600; letter-spacing: -0.01em">{{s.title}}</p>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #3D3B4F">{{s.desc}}</p>
+<div style="margin-top: auto; display: flex; flex-wrap: wrap; align-items: center; gap: 8px">
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.08em; color: #55536A">PIECES IN PLAY</span>
+<sc-for list="{{s.pieces}}" as="pc" hint-placeholder-count="2">
+<span style="display: inline-flex; align-items: center; gap: 6px; padding: 6px 12px; border-radius: 999px; background: {{pc.tint}}; color: {{pc.ink}}; font-family: 'JetBrains Mono', monospace; font-size: 12px"><span style="width: 6px; height: 6px; border-radius: 50%; background: {{pc.dot}}; display: inline-block"></span>{{pc.label}}</span>
+</sc-for>
+</div>
+<div style="height: 3px; border-radius: 2px; background: #E2E1EA; overflow: hidden">
+<sc-if value="{{playing}}" hint-placeholder-val="{{ true }}"><div class="prog" style="height: 3px; background: #15131F"></div></sc-if>
+</div>
+</div>
+</sc-if>
+</sc-for>
+<p style="margin: 0; display: flex; align-items: center; gap: 8px; font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #55536A"><svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 3-6.7"></path><path d="M3 4v5h5"></path></svg>Then back to Map, with what the last cycle taught us.</p>
+</div>
+</div>
+</section>
+
+<section style="max-width: 1120px; margin: 0 auto; padding: 0 32px 96px; box-sizing: border-box">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 16px; margin-bottom: 28px">
+<div>
+<h2 style="margin: 0 0 8px; font-family: 'Space Grotesk', sans-serif; font-size: 36px; letter-spacing: -0.02em">Explore by area</h2>
+<p style="margin: 0; font-size: 17px; color: #55536A">Each area opens the projects where I owned the decisions.</p>
+</div>
+<a href="Work.dc.html" style="font-size: 15px; font-weight: 600">All work →</a>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px">
+<a class="lift" href="Work.dc.html" style="display: flex; flex-direction: column; gap: 14px; padding: 24px; min-height: 230px; box-sizing: border-box; border-radius: 22px; background: #FFFFFF; border: 1px solid #E2E1EA; color: #15131F; text-decoration: none">
+<span style="width: 44px; height: 44px; border-radius: 14px; background: #ECE8FF; display: flex; align-items: center; justify-content: center"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#5B3DF5" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 3 8l9 5 9-5-9-5Z"></path><path d="m3 13 9 5 9-5"></path></svg></span>
+<span style="font-family: 'Space Grotesk', sans-serif; font-size: 21px; font-weight: 600">Systems Architecture</span>
+<span style="font-size: 15px; line-height: 1.55; color: #55536A">Data models and platform design that a small team can actually maintain.</span>
+<span style="margin-top: auto; font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #3B22C7">2 projects →</span>
+</a>
+<a class="lift" href="Work.dc.html" style="display: flex; flex-direction: column; gap: 14px; padding: 24px; min-height: 230px; box-sizing: border-box; border-radius: 22px; background: #FFFFFF; border: 1px solid #E2E1EA; color: #15131F; text-decoration: none">
+<span style="width: 44px; height: 44px; border-radius: 14px; background: #FFE9E1; display: flex; align-items: center; justify-content: center"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#E2552A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="7" width="10" height="10" rx="2"></rect><path d="M10 3v4M14 3v4M10 17v4M14 17v4M3 10h4M3 14h4M17 10h4M17 14h4"></path></svg></span>
+<span style="font-family: 'Space Grotesk', sans-serif; font-size: 21px; font-weight: 600">AI Strategy</span>
+<span style="font-size: 15px; line-height: 1.55; color: #55536A">Choosing the tools, writing the guardrails, and getting people to use them.</span>
+<span style="margin-top: auto; font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #9A3412">1 project →</span>
+</a>
+<a class="lift" href="Work.dc.html" style="display: flex; flex-direction: column; gap: 14px; padding: 24px; min-height: 230px; box-sizing: border-box; border-radius: 22px; background: #FFFFFF; border: 1px solid #E2E1EA; color: #15131F; text-decoration: none">
+<span style="width: 44px; height: 44px; border-radius: 14px; background: #DDF4F2; display: flex; align-items: center; justify-content: center"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0E9F9A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10 14a4 4 0 0 0 5.66 0l3-3a4 4 0 0 0-5.66-5.66l-1 1"></path><path d="M14 10a4 4 0 0 0-5.66 0l-3 3a4 4 0 0 0 5.66 5.66l1-1"></path></svg></span>
+<span style="font-family: 'Space Grotesk', sans-serif; font-size: 21px; font-weight: 600">Integrations</span>
+<span style="font-size: 15px; line-height: 1.55; color: #55536A">Getting CRM, finance, and productivity tools to share one version of the truth.</span>
+<span style="margin-top: auto; font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #0B5F5B">1 project →</span>
+</a>
+<a class="lift" href="Work.dc.html" style="display: flex; flex-direction: column; gap: 14px; padding: 24px; min-height: 230px; box-sizing: border-box; border-radius: 22px; background: #FFFFFF; border: 1px solid #E2E1EA; color: #15131F; text-decoration: none">
+<span style="width: 44px; height: 44px; border-radius: 14px; background: #FFF3C7; display: flex; align-items: center; justify-content: center"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#B88600" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12a8 8 0 0 1-14 5.3"></path><path d="M4 12a8 8 0 0 1 14-5.3"></path><path d="M18 3v4h-4"></path><path d="M6 21v-4h4"></path></svg></span>
+<span style="font-family: 'Space Grotesk', sans-serif; font-size: 21px; font-weight: 600">Automation</span>
+<span style="font-size: 15px; line-height: 1.55; color: #55536A">Flow, Apex, and Power Automate that take repetitive work off people's plates.</span>
+<span style="margin-top: auto; font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #7A5300">2 projects →</span>
+</a>
+</div>
+</section>
+
+<section style="max-width: 1120px; margin: 0 auto; padding: 0 32px 96px; box-sizing: border-box">
+<div style="background: #15131F; color: #FFFFFF; border-radius: 28px; padding: 48px; box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 40px; align-items: center">
+<div style="flex: 1 1 460px; min-width: 0">
+<p style="margin: 0 0 16px; font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.08em; color: #B9AEFF">FEATURED · SYSTEMS ARCHITECTURE</p>
+<h2 style="margin: 0 0 16px; font-family: 'Space Grotesk', sans-serif; font-size: 36px; line-height: 1.1; letter-spacing: -0.02em">Rebuilding an eligibility and lending pipeline</h2>
+<p style="margin: 0 0 28px; font-size: 17px; line-height: 1.6; color: #CFCDE0">Replaced a spreadsheet-driven review with a structured data model and automated decision support, so a small team could screen more deals with fewer errors.</p>
+<a href="CaseStudy.dc.html" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 24px; border-radius: 999px; background: {{accent}}; color: #FFFFFF; text-decoration: none; font-weight: 600; font-size: 15px">Read the case study →</a>
+</div>
+<div style="flex: 1 1 320px; min-width: 0; display: flex; flex-direction: column">
+<div style="padding: 16px 0; border-top: 1px solid rgba(255,255,255,0.16); display: flex; justify-content: space-between; gap: 16px; font-size: 15px"><span style="color: #A9A6BF">Role</span><span>Architect + lead developer</span></div>
+<div style="padding: 16px 0; border-top: 1px solid rgba(255,255,255,0.16); display: flex; justify-content: space-between; gap: 16px; font-size: 15px"><span style="color: #A9A6BF">Stack</span><span style="font-family: 'JetBrains Mono', monospace; font-size: 14px">Apex · Flow · LWC · SOQL</span></div>
+<div style="padding: 16px 0; border-top: 1px solid rgba(255,255,255,0.16); border-bottom: 1px solid rgba(255,255,255,0.16); display: flex; justify-content: space-between; gap: 16px; font-size: 15px"><span style="color: #A9A6BF">Outcome</span><span>[YOUR OUTCOME METRIC]</span></div>
+</div>
+</div>
+</section>
+
+<footer style="border-top: 1px solid #E2E1EA">
+<div style="max-width: 1120px; margin: 0 auto; padding: 32px; box-sizing: border-box; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 16px">
+<p style="margin: 0; font-size: 15px; color: #3D3B4F">Open to conversations about architecture and AI strategy work.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 8px">
+<a href="#" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 12px; font-size: 15px; font-weight: 500">Email</a>
+<a href="#" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 12px; font-size: 15px; font-weight: 500">LinkedIn</a>
+<a href="#" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 12px; font-size: 15px; font-weight: 500">GitHub</a>
+</div>
+</div>
+<p style="max-width: 1120px; margin: 0 auto; padding: 0 32px 32px; box-sizing: border-box; font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #55536A">© 2026 Lexi Taber · Built from scratch, code on GitHub</p>
+</footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"accent":{"editor":"color","default":"#5B3DF5","options":["#5B3DF5","#E2552A","#0B7F7B","#15131F"]},"$preview":{"width":1280,"height":1720}}'>
+class Component extends DCLogic {
+constructor(props) {
+super(props);
+this.state = { step: 0, paused: false };
+this.timer = null;
+}
+componentDidMount() {
+const reduced = typeof window !== 'undefined' && window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+if (reduced) { this.setState({ paused: true }); } else { this.start(); }
+}
+componentWillUnmount() { this.stop(); }
+start() {
+this.stop();
+this.timer = setInterval(() => { this.setState({ step: (this.state.step + 1) % 4 }); }, 3600);
+}
+stop() { if (this.timer) { clearInterval(this.timer); this.timer = null; } }
+renderVals() {
+const AREAS = {
+arch: { label: 'Architecture', dot: '#5B3DF5', tint: '#ECE8FF', ink: '#3B22C7' },
+ai: { label: 'AI strategy', dot: '#FF6A3D', tint: '#FFE9E1', ink: '#9A3412' },
+int: { label: 'Integrations', dot: '#0E9F9A', tint: '#DDF4F2', ink: '#0B5F5B' },
+auto: { label: 'Automation', dot: '#F2B705', tint: '#FFF3C7', ink: '#7A5300' }
+};
+const INK = { STRATEGY: '#3B22C7', 'BUILD + LEAD': '#0B5F5B', COACH: '#9A3412' };
+const STEPS = [
+{ label: 'Map', title: 'Map the real process', desc: 'Sit with the people doing the work and map how it actually runs before touching the platform.', mode: 'STRATEGY', pieces: ['arch'] },
+{ label: 'Decide', title: 'Make the architecture call', desc: 'Choose the data model and the tools, including where AI fits and where it does not.', mode: 'STRATEGY', pieces: ['arch', 'ai'] },
+{ label: 'Build', title: 'Build it with the team', desc: 'I write the hardest parts myself and set engineers up to build the rest, through technical scopes, PRDs, and code reviews.', mode: 'BUILD + LEAD', pieces: ['int', 'auto'] },
+{ label: 'Hand off', title: 'Leave the team owning it', desc: 'Pair, document, and train so the system runs without me and people actually use it.', mode: 'COACH', pieces: ['ai', 'auto'] }
+];
+const a = this.state.step;
+const paused = this.state.paused;
+const steps = STEPS.map((st, i) => {
+const on = i === a;
+return {
+...st,
+num: '0' + (i + 1),
+active: on,
+pressed: on ? 'true' : 'false',
+bg: on ? '#15131F' : '#FFFFFF',
+fg: on ? '#FFFFFF' : '#15131F',
+border: on ? '#15131F' : '#E2E1EA',
+line: i < a ? '#15131F' : '#E2E1EA',
+hasNext: i < STEPS.length - 1,
+modeInk: INK[st.mode],
+pieces: st.pieces.map((k) => AREAS[k]),
+pick: () => { this.stop(); this.setState({ step: i, paused: true }); }
+};
+});
+const toggle = () => {
+if (this.state.paused) { this.setState({ paused: false }); this.start(); }
+else { this.stop(); this.setState({ paused: true }); }
+};
+return { accent: this.props.accent ?? '#5B3DF5', steps, paused, playing: !paused, toggle };
+}
+}
+</script>
+</body>
+</html>
